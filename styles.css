@@ -1,0 +1,116 @@
+html{
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: hsl(235, 18%, 26%);
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.6fr 3fr 1fr;
+    grid-template-areas: 
+                       ". a a ."
+                       ". b b ."
+                       ". c c .";
+    overflow: hidden;
+}
+main{
+    grid-area: b;
+}
+.container{
+    display:grid;
+    grid-template-columns: 2.5fr 2fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+h1{
+    margin-top: -10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+p{
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(234, 29%, 20%);
+}
+.title-div p{
+    margin: -10px 0 20px 0;
+}
+.form{
+    padding: 4.5rem 3rem 4.5rem 3rem;
+}
+.info-div{
+    margin-bottom: 15px;
+}
+.semi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 20px;
+    gap: 15px;
+}
+.small-tick{
+    height: 15px;
+    width: 15px;
+}
+.email-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+label{
+    font-size: 10px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.email-div input{
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid hsla(231, 7%, 60%, 0.3);
+    padding: 10px;
+    font-size: 12px;
+    color: hsl(231, 7%, 60%);
+    font-weight: 600;
+}
+.email-div input:focus{
+    outline: none;
+}
+.email-div input:invalid{
+    border: 2px solid hsl(4, 100%, 67%);
+    background-color:hsla(4, 100%, 67%,0.1);
+    color: hsl(4, 100%, 67%);
+}
+.cover{
+    height: 100%;
+    width: 95%;
+    object-fit: contain;
+}
+
+.btn{
+    padding: 15px;
+    font-size: 12px;
+    height: 45px;
+    width: 100%;
+    border-radius: 7px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    background-color: hsl(234, 29%, 20%);
+    border:0;
+}
+.attribution { 
+    grid-area: c;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.attribution p{
+    color:hsl(0, 0%, 100%);
+    font-size: 13px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(4, 100%, 67%); 
+}
