@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
-<body>
+<body class="body">
   <!-- Sign-up form start -->
-  <main>
+  <main class="main">
     <div class="container">
-    <form action="success.html" method="POST" class="form">
+    <form action="success.html" class="form" method="post">
       <div class="title-div">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -34,10 +34,13 @@
       </div>
 
       <div class="email-div">
-        <label for="input-mail">Email address</label>
-        <input id="input-mail" type="email" placeholder="email@company.com">
+        <div class="label-div">
+            <label for="input-mail">Email address</label>
+            <div class="warning"></div>
+          </div>
+            <input id="input-mail" placeholder="email@company.com" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
       </div>
-      <input class="btn" type="submit" value="Subscribe to monthly newsletter">
+      <input class="btn" type="submit" value="Subscribe to monthly newsletter" onclick="validateEmail()">
     </form>
 
     <div class="cover-div">
@@ -52,5 +55,6 @@
     Coded by <a href="#"> Nivrii</a>.
   </p>
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
