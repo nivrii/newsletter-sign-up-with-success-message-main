@@ -98,10 +98,11 @@ label{
     background-color:hsla(4, 100%, 67%,0.1);
     color: hsl(4, 100%, 67%);
 }
+
 .cover{
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    background-size: cover; 
 }
 .btn{
     padding: 15px;
@@ -121,10 +122,6 @@ label{
     font-weight: 600;
     box-shadow: 2px 2px 5px 2px hsl(4, 76%, 37%);
 }
-.body2{
-
-}    
-
 .success-div{
     position: fixed;
     width: min-content;

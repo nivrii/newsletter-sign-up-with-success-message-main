@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/Responsive/stylesResponsive.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body class="body">
+    <!-- Sign-up form start -->
+    <main class="main">
+      <div class="container">
+        <div class="cover-div">
+          <img
+            alt="sign up image"
+            src="assets/images/illustration-sign-up-mobile.svg"
+            class="cover"
+          />
+        </div>
+
+        <form
+          action="/Responsive/success-reponsive.html"
+          class="form"
+          method="post"
+        >
+          <div class="title-div">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          </div>
+
+          <div class="info-div">
+            <div class="semi">
+              <img
+                class="small-tick"
+                src="assets/images/icon-list.svg"
+                alt="small tick"
+              />
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="semi">
+              <img
+                class="small-tick"
+                src="assets/images/icon-list.svg"
+                alt="small tick"
+              />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="semi">
+              <img
+                class="small-tick"
+                src="assets/images/icon-list.svg"
+                alt="small tick"
+              />
+              <p>And much more!</p>
+            </div>
+          </div>
+
+          <div class="email-div">
+            <div class="label-div">
+              <label for="input-mail">Email address</label>
+              <div class="warning"></div>
+            </div>
+            <input
+            type="email"
+              id="input-mail"
+              placeholder="email@company.com"
+              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              required
+            />
+          </div>
+          <input
+            class="btn"
+            type="submit"
+            value="Subscribe to monthly newsletter"
+            onclick="validateEmail()"
+          />
+        </form>
+      </div>
+    </main>
+    <script src="/Responsive/index-responsive.js"></script>
+  </body>
+</html>

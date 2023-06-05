@@ -6,6 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <media
+  width="768"
+  media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="index-responsive.html">
+</media>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body class="body">
@@ -20,15 +25,15 @@
 
       <div class="info-div">
         <div class="semi">
-          <img class="small-tick" src="assets/images/icon-list.svg" alt="">
+          <img class="small-tick" src="assets/images/icon-list.svg" alt="small tick">
           <p>Product discovery and building what matters</p>
         </div>
         <div class="semi">
-          <img class="small-tick" src="assets/images/icon-list.svg" alt="">
+          <img class="small-tick" src="assets/images/icon-list.svg" alt="small tick">
           <p>Measuring to ensure updates are a success</p>
         </div>
         <div class="semi"> 
-          <img class="small-tick" src="assets/images/icon-list.svg" alt="">
+          <img class="small-tick" src="assets/images/icon-list.svg" alt="small tick">
           <p>And much more!</p>
         </div>
       </div>
@@ -38,13 +43,13 @@
             <label for="input-mail">Email address</label>
             <div class="warning"></div>
           </div>
-            <input id="input-mail" placeholder="email@company.com" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+            <input id="input-mail" placeholder="email@company.com" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" required>
       </div>
       <input class="btn" type="submit" value="Subscribe to monthly newsletter" onclick="validateEmail()">
     </form>
 
     <div class="cover-div">
-      <img src="assets/images/illustration-sign-up-desktop.svg" alt="" class="cover">
+      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="Register image" class="cover">
     </div>
   </div>
   </main>

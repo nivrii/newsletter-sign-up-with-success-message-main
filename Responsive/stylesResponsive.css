@@ -1,0 +1,143 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+.body { 
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.form{
+    padding: 0 3rem;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+.container h1 {
+  margin: 2rem 0 0 0;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(234, 29%, 20%);
+}
+.info-div{
+    margin: -10px 0 10px 0;
+}
+.semi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+.semi p{
+    margin-left: 15px;
+}
+.small-tick {
+  height: 40px;
+  width: 40px;
+}
+.email-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.label-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+label {
+  font-size: 1.3rem;
+  color: hsl(234, 29%, 20%);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.warning {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.email-div input {
+  height: 100px;
+  border-radius: 10px;
+  color: hsl(231, 12%, 32%);
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 5px 1px;
+  padding: 0 50px;
+}
+.email-div input:focus {
+  outline: none;
+}
+.email-div input:invalid {
+  border: 2px solid hsl(4, 100%, 67%);
+  background-color: hsla(4, 100%, 67%, 0.1);
+}
+.cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.btn {
+  padding: 15px;
+  font-size: 1.5rem;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  background-color: hsl(234, 29%, 20%);
+  border: 0;
+}
+.btn:hover {
+  font-size: 15px;
+  background: linear-gradient(90deg, hsl(4, 76%, 37%) 5%, hsl(4, 100%, 67%));
+  font-weight: 600;
+  box-shadow: 2px 2px 5px 2px hsl(4, 76%, 37%);
+}
+.body2 {
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.success-div {
+    padding: 5rem 1rem 2rem 1rem;
+}
+.success-div h1 {
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+.submit {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+}
+.submit:hover {
+  font-size: 20px;
+  background: linear-gradient(90deg, hsl(4, 76%, 37%) 5%, hsl(4, 100%, 67%));
+  font-weight: 600;
+  box-shadow: 2px 2px 5px 2px hsl(4, 76%, 37%);
+}
+.output {
+  margin-bottom: 5.5rem;
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+.attribution {
+  display: none;
+}
