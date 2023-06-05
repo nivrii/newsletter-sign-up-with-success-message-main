@@ -19,7 +19,7 @@ function validateEmail() {
   }
   else {  
       warning.textContent = "";
-      window.location.href = "Responsive/success-responsive.html" 
+      window.location.href = "success-responsive.html" 
       return true
 }
 }
