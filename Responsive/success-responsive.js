@@ -1,5 +1,5 @@
 if (window.innerWidth > 768) {
-    window.location.href = '/success.html';
+    window.location.href = '/newsletter-sign-up-with-success-message-main/success.html';
 }
 let output = document.querySelector('.output')
 var email = localStorage.getItem('input-mail');
