@@ -1,7 +1,5 @@
 if (window.innerWidth <= 768) {
-    // If the screen width is less than or equal to 768 pixels,
-    // load the mobile version of the page
-    window.location.href = 'success-responsive.html';
+    window.location.href = '/Responsive/success-responsive.html';
 }
 let output = document.querySelector('.output')
 var email = localStorage.getItem('input-mail');
